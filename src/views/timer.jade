@@ -1,0 +1,55 @@
+extends layouts/main
+
+block additionalHead
+  link( rel='stylesheet' href='/css/editor.css' type='text/css')
+
+block content
+  .row
+    .col-lg-8
+      .panel.panel-default
+        .panel-heading#runName Timer
+        table.table.table-borderd.table-hover
+          thead
+            tr
+              th Name
+              th Best
+              th Live
+              th +/-
+                button.btn.editButton#editButton( type='button' data-toogle='button')
+                  span.glyphicon.glyphicon-pencil
+                  span Edit
+          tbody#splits
+            tr#split0
+              td#name0 New Split
+              td#best0 ???
+              td#live0 -
+              td#difference0 -
+        .panel-footer
+          button.btn.btn-default.btn-md#startButton
+            span.glyphicon.glyphicon-play
+            span Start
+          &nbsp;
+          button.btn.btn-default.btn-md.hidden#splitButton
+            span.glyphicon.glyphicon-play
+            span Split
+          &nbsp;
+          button.btn.btn-default.btn-md#stopButton
+            span.glyphicon.glyphicon-stop
+            span Stop
+          &nbsp;
+          button.btn.btn-default.btn-md.hidden#resumeButton
+            span.glyphicon.glyphicon-forward
+            span Resume
+          &nbsp;
+          button.btn.btn-default.btn-md#skipButton
+            span.glyphicon.glyphicon-step-forward
+            span Skip
+          &nbsp;
+          button.btn.btn-default.btn-md#undoButton
+            span.glyphicon.glyphicon-step-backward
+            span Undo
+          &nbsp;
+          button.btn.btn-default.btn-md#resetButton
+            span.glyphicon.glyphicon-refresh
+            span Reset
+          span.pull-right#timeDisplay 00:00.000

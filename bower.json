@@ -1,0 +1,8 @@
+{
+    "name": "ToxicTimer",
+    "dependencies": {
+        "jquery": "2.1.0",
+        "bootstrap": "3.1.0",
+        "requirejs": null
+    }
+}

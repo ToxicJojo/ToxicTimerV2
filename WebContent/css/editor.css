@@ -1,0 +1,7 @@
+.editButton {
+  float: right;
+  padding: 1px 3px;
+  position: relative;
+  top: -8px;
+  right: -8px;
+}

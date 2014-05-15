@@ -1,0 +1,17 @@
+doctype html
+html.app( lang='en')
+
+  include ../shared/head
+    block additionalHead
+
+  body
+    .container
+      include ../shared/header
+
+      #notificationDiv
+
+      block content
+
+      include ../shared/footer
+
+      block startup
